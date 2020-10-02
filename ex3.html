@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(number) {
+        let x = Math.sqrt(5 * Math.pow(number, 2) + 4);
+        let y = Math.sqrt(5 * Math.pow(number, 2) - 4);
+        if(x%1===0||y%1===0) return  true;
+        return false;
+    }
+    let x = prompt("enter a number");
+    alert(isFibonacci(x));
+</script>
+</body>
+</html>
